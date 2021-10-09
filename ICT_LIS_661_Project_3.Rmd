@@ -1,0 +1,136 @@
+---
+title: "ICT_LIS_661_Project_3"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Welcome to R Markdown!
+
+**Please note that I am including this introductory section again for your reference; there is no new information in this section as compared to its Module 2 equivalent**
+
+This is an R Markdown document (abbreviated as `.Rmd`). Markdown is a simple markup language (notice the pun?) that is popular in many ICT communities, including data scientists. A markup language is a way of using code to format text. 
+
+For example, in Markdown, putting a single asterisk on either side of some text makes it *italics*, putting two asterisks on either side of some text makes it **bold**. You can also use Markdown to format text in other ways, like adding a hyperlink to this [helpful cheatsheet on R Markdown](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf). 
+
+When you view a raw Markdown document, as you are presumably doing now in RStudio, you're only seeing the raw code, not the actual formatting. To make that magic happen, the document needs to be *knit* together in a way that interprets the code and produces the formatting. For example, a `.docx` file is essentially a very complex markup document, but Microsoft Word (and other word processors) interprets the code behind the scenes and produces the formatting for you. A better example might be a web browser, which interprets HTML (and other) code and gives you a formatted web page. 
+
+HTML is actually quite relevant here, because Markdown is semi-derivative of HTML. That is, Markdown is designed to be converted to HTML, which is then interpreted in a Web browser to be a nice, neat page. However, R Markdown is meant to go beyond some of that original use. In short, R Markdown is a way for data scientists to share their code **and** write up their research. So, the regular Markdown features help data scientists format their regular writing, and then there are *code chunks* a data scientist can add to display—and run—code in a way that will appear alongside their writing and commentary.
+
+Here's what a code chunk looks like:
+
+```{r}
+1 + 1
+```
+
+When the `.Rmd` document is knit to HTML, not only does the Markdown stuff get formatted, but all of these code chunks are run, so that the code itself **and** the results will appear in the final document. Pretty nifty!
+
+That said, it's often useful to run the code before you knit the file—you know, to make sure the code works properly before you publish it. In that case, you can hit the green "play" button in the top right of the code chunk, and the code will run and display the results—not in the usual console, but in a mini-console attached to the code itself. Try it out on the code-chunk above. You'll need to run your own code to test it as you work with `.Rmd` documents in this class.
+
+# Welcome to Project 3!
+
+Before moving on, please ensure that you have copied this file out of the GitHub repository where you found it and pasted it into a different folder before starting to make your own changes.
+
+> Under the headers below, I'll provide you with certain instructions, all of them formatted as blockquotes, like this paragraph is. Underneath each set of blockquoted instructions, you should write a response to any questions I ask and fill out any code chunks as I instruct you. At the very end of this document, I'll provide instructions for *knitting* and submitting the `.Rmd` to Canvas.
+
+## Project 3, Part 1: Your Dataset
+
+> For this project, you will need to identify a dataset with at least 100 observations and 5 variables. A dataset with at least 1,000 observations and 10 variables would be even better—but not necessary. This does not need to be a publicly available dataset, but please ensure that you can use the dataset legally and ethically. 
+
+> It is fine for this to be a dataset that you have used previously in this class; in fact, *Part 1* of this project repeats much of Project 2. There's real value in repeating that experience on new data, but I also won't blame you for saving yourself some time and copying over text and code from Project 2. However, if you are reusing a dataset, you must make sure that the dataset is appropriate for performing t-tests and regressions.
+
+> In the code chunk below, please load the dataset into this document. (Keep in mind that you can—and may need to—install and load packages as part of this or any other code chunk).
+
+
+```{r}
+
+```
+
+> Now that you've loaded the dataset, please tell me some about it. Does it have a title? If not, what title would you give it? What reference or citation information (including a public URL, if applicable) can you provide about the dataset? Who created the dataset and when? How did they create it?
+
+
+
+
+> As needed, perform any data cleaning or data munging on the dataset in the code chunk below.
+
+```{r}
+
+```
+
+> In the code chunk below, write code to determine the number of observations in the dataset. As is typical for R, there are a number of ways to do this—*how* you do so is less important than *that* you do so.
+
+```{r}
+
+```
+
+> In the code chunk below, write code to list the variables included in the dataset. Then, below the code chunk, list and explain 2-5 variables that you expect to explore with t-tests and regressions.
+
+```{r}
+
+```
+
+
+
+
+
+
+> In the code chunk below, calculate descriptive statistics (including mean, median, variance, and standard deviation) for each of the variables you listed above. Note that this is going to involve repeating a lot of the same code over and over (and that you've already used this code a lot in Project 2). This is exactly the sort of thing that functions were designed for. If you're feeling ambitious, I recommend writing your own function that, will calculate all of the descriptive statistics associated with a variable, and then feeding each variable into that (or even feeding a vector of variables into that). If you're feeling particularly ambitious, you could look up and use the `print()` and `paste()` or `paste0()` functions to make the output of your function more intuitive and helpful (for Project 2's purposes, at least). Whatever route you take, writing a function will be more work up front, but it will save you some copying and pasting, and function-writing is a very valuable skill to practice.
+
+```{r}
+
+```
+
+
+
+## Project 3, Part 2: T-Test
+
+> For this part of the project, you will be carrying out a t-test. Please recall that the purpose of a t-test is to compare two means!
+
+### Hypotheses
+
+> Below, please describe a set of hypotheses (both null and alternative) related to this data that can be tested using a t-test.
+
+
+### Data Analysis
+
+> In the code chunk below, please carry out a t-test that will test the hypotheses listed above. Then, below the code chunk, summarize the results of this analysis. Make particular reference to relevant statistics, including t-value and p-value (statistical significance).
+
+```{r}
+
+```
+
+### Conclusions
+
+> Below, interpret the results of this analysis (that is, describe what the results mean for your data). Please also discuss any practical implications of these results (that is, explain how people might wish to think or act differently based on these results).
+
+## Project 2, Part 3: Regression
+
+> For this part of the project, you will be carrying out a regression. Please recall that the purpose of regression is to describe the relationship between two (or more) variables!
+
+### Hypotheses
+
+> Below, please describe a set of hypotheses (both null and alternative) related to this data that can be tested using regression.
+
+
+### Data Analysis
+
+> In the code chunk below, please carry out a regression that will test the hypotheses listed above. Then, below the code chunk, summarize the results of this analysis. Make particular reference to relevant statistics, including beta (coefficient), t-value and p-value (statistical significance).
+
+```{r}
+
+```
+
+### Conclusions
+
+> Below, interpret the results of this analysis (that is, describe what the results mean for your data). Please also discuss any practical implications of these results (that is, explain how people might wish to think or act differently based on these results).
+
+
+# Submitting Project 3
+
+> After you've completed all parts of this assignment to your satisfaction, click on the `Knit` button in the toolbar at the top of this pane. When/if prompted, please indicate that you wish to knit to an HTML file. Knitting to PDF or Word are fancy tricks but take some more setting up, and that's beyond the scope of this class. 
+
+> After RStudio has finished knitting the file, it will bring it up in a special RStudio interface. You can use this interface to review the document and make sure that everything appears as you want. Then, however, you should navigate to the same folder where you have stored this `.Rmd` file, and you will find a `.html` file with the same name in that same folder. You can open that file to view this in your browser; more importantly, this is the file that you should submit to Canvas to complete this assignment.
