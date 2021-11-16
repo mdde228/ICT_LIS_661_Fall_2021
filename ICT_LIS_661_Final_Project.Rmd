@@ -1,0 +1,85 @@
+---
+title: "ICT_LIS_661_Final_Project"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Problem Statement
+
+> Describe the data problem(s) you are addressing.
+
+
+> Provide some contextual information related to the problem(s)
+
+# Data Description/Preparation
+
+> In the code chunk below, run all the code necessary to respond to the questions below.
+
+```{r}
+
+```
+
+> Describe your dataset, including a reference, a description of the data collection procedure, and its size (number of observations and variables).
+
+
+> Explain how you imported and manipulated the data for analysis.
+
+
+> Provide the description of key variables and their descriptive statistics.
+
+
+# Hypotheses
+
+> In the code chunk below, run all the code necessary to respond to the questions below.
+
+```{r}
+
+```
+
+> Describe at least four research hypotheses you wish to test.
+
+
+> Explain each hypothesis in detail in terms of the variables identified above. 
+
+# Analysis Methods
+
+> Describe your data analysis methods for testing your hypotheses. 
+
+
+> Explain why those data analysis methods are useful for testing your hypotheses.
+
+# Results and Visualizations
+
+> In the code chunk below, run all the code necessary to carry out the analyses described above.
+
+```{r}
+
+```
+
+> In the code chunk below, run all the code necessary to visualize your results.
+
+```{r}
+
+```
+
+# Discussion
+
+> Interpret the results above.
+
+
+> Discuss any practical implications of your results.
+
+
+> Describe any limitations of your data analyses.
+
+
+# Submitting the Project
+
+> After you've completed all parts of this assignment to your satisfaction, click on the `Knit` button in the toolbar at the top of this pane. When/if prompted, please indicate that you wish to knit to an HTML file. Knitting to PDF or Word are fancy tricks but take some more setting up, and that's beyond the scope of this class. 
+
+> After RStudio has finished knitting the file, it will bring it up in a special RStudio interface. You can use this interface to review the document and make sure that everything appears as you want. Then, however, you should navigate to the same folder where you have stored this `.Rmd` file, and you will find a `.html` file with the same name in that same folder. You can open that file to view this in your browser; more importantly, this is the file that you should submit to Canvas to complete this assignment.
