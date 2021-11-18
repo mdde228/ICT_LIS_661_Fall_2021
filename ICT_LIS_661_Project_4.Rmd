@@ -1,0 +1,119 @@
+---
+title: "ICT_LIS_661_Project_4"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Welcome to R Markdown!
+
+**Please note that I am including this introductory section again for your reference; there is no new information in this section as compared to its Module 2 or 3 equivalent**
+
+This is an R Markdown document (abbreviated as `.Rmd`). Markdown is a simple markup language (notice the pun?) that is popular in many ICT communities, including data scientists. A markup language is a way of using code to format text. 
+
+For example, in Markdown, putting a single asterisk on either side of some text makes it *italics*, putting two asterisks on either side of some text makes it **bold**. You can also use Markdown to format text in other ways, like adding a hyperlink to this [helpful cheatsheet on R Markdown](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf). 
+
+When you view a raw Markdown document, as you are presumably doing now in RStudio, you're only seeing the raw code, not the actual formatting. To make that magic happen, the document needs to be *knit* together in a way that interprets the code and produces the formatting. For example, a `.docx` file is essentially a very complex markup document, but Microsoft Word (and other word processors) interprets the code behind the scenes and produces the formatting for you. A better example might be a web browser, which interprets HTML (and other) code and gives you a formatted web page. 
+
+HTML is actually quite relevant here, because Markdown is semi-derivative of HTML. That is, Markdown is designed to be converted to HTML, which is then interpreted in a Web browser to be a nice, neat page. However, R Markdown is meant to go beyond some of that original use. In short, R Markdown is a way for data scientists to share their code **and** write up their research. So, the regular Markdown features help data scientists format their regular writing, and then there are *code chunks* a data scientist can add to display—and run—code in a way that will appear alongside their writing and commentary.
+
+Here's what a code chunk looks like:
+
+```{r}
+1 + 1
+```
+
+When the `.Rmd` document is knit to HTML, not only does the Markdown stuff get formatted, but all of these code chunks are run, so that the code itself **and** the results will appear in the final document. Pretty nifty!
+
+That said, it's often useful to run the code before you knit the file—you know, to make sure the code works properly before you publish it. In that case, you can hit the green "play" button in the top right of the code chunk, and the code will run and display the results—not in the usual console, but in a mini-console attached to the code itself. Try it out on the code-chunk above. You'll need to run your own code to test it as you work with `.Rmd` documents in this class.
+
+# Welcome to Project 4!
+
+Before moving on, please ensure that you have copied this file out of the GitHub repository where you found it and pasted it into a different folder before starting to make your own changes.
+
+> Under the headers below, I'll provide you with certain instructions, all of them formatted as blockquotes, like this paragraph is. Underneath each set of blockquoted instructions, you should write a response to any questions I ask and fill out any code chunks as I instruct you. At the very end of this document, I'll provide instructions for *knitting* and submitting the `.Rmd` to Canvas.
+
+## Project 4, Part 1: Your Text Data
+
+> For this project, you will need to identify a text that contains a minimum of 5,000 words. This does not need to be a publicly available text, but please ensure that you can use the dataset legally and ethically. 
+
+> In the code chunk below, please load the text into this document. (Keep in mind that you can—and may need to—load packages as part of this or any other code chunk).
+
+
+```{r}
+
+```
+
+> Now that you've loaded the test, please tell me some about it. Does it have a title? If not, what title would you give it? What reference or citation information (including a public URL, if applicable) can you provide about the text? Who created the text and when? How did they create it? What is your interest in it?
+
+
+
+
+> As needed, perform any data cleaning or data munging on the text in the code chunk below.
+
+```{r}
+
+```
+
+
+## Project 4, Part 2: Word Count
+
+> For this part of the project, you will be carrying out a t-test. Please recall that the purpose of a t-test is to compare two means!
+
+> In the code chunk below, please create a word count table of your text. 
+
+```{r}
+
+```
+
+> In the following code chunk, please print or display an abbreviated version of your word count table based on certain criteria (for example, only displaying words that appeared more than five times).
+
+```{r}
+
+```
+
+> Below, please interpret your word count table. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text. 
+
+
+
+## Project 4, Part 3: Word Cloud
+
+> In the code chunk below, create and display a word cloud based on your text.
+
+```{r}
+
+```
+
+> Below, please interpret your word cloud. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text.
+
+
+
+
+## Project 4, Part 4: Sentiment Analysis
+
+> In the code chunk below, conduct a sentiment analysis of your text based on the word dictionaries that we used during Module 11.
+
+```{r}
+
+```
+
+> In the code chunk below, calculate and report the percentage of words in your text that are positive or negative.
+
+```{r}
+
+```
+
+> Below, please interpret your sentiment analysis. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text. 
+
+
+
+
+# Submitting Project 4
+
+> After you've completed all parts of this assignment to your satisfaction, click on the `Knit` button in the toolbar at the top of this pane. When/if prompted, please indicate that you wish to knit to an HTML file. Knitting to PDF or Word are fancy tricks but take some more setting up, and that's beyond the scope of this class. 
+
+> After RStudio has finished knitting the file, it will bring it up in a special RStudio interface. You can use this interface to review the document and make sure that everything appears as you want. Then, however, you should navigate to the same folder where you have stored this `.Rmd` file, and you will find a `.html` file with the same name in that same folder. You can open that file to view this in your browser; more importantly, this is the file that you should submit to Canvas to complete this assignment.
