@@ -62,8 +62,6 @@ Before moving on, please ensure that you have copied this file out of the GitHub
 
 ## Project 4, Part 2: Word Count
 
-> For this part of the project, you will be carrying out a t-test. Please recall that the purpose of a t-test is to compare two means!
-
 > In the code chunk below, please create a word count table of your text. 
 
 ```{r}
